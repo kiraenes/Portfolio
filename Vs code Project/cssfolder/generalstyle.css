@@ -1,0 +1,85 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+html, body {
+    height: 100%;
+    margin: 0;
+}
+
+body {
+    background: #111;
+    color: #eee;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* vertical centering */
+    align-items: center;     /* horizontal centering */
+    margin-bottom: 40px;     /* optional, can adjust */
+    text-align: center;      /* optional, already covered by flex */
+}
+
+header h1 {
+    font-size: 2.4rem;
+    color: #ffffff;
+}
+
+header p {
+    color: #bbb;
+    font-size: 1.1rem;
+}
+
+#project-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 20px;
+    margin-bottom: 2rem;
+}
+
+.three-slots {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    align-items: center;
+    gap: 10px;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+.card-layout .left {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+    text-align: center; 
+}
+
+.slot-right1 {
+    display: flex;
+    justify-content: flex-end; /* pushes content to the right */
+    align-items: center;       /* vertically center if needed */
+}
+
+.slot-middle {
+    height: 100%;
+}
+
+.slot-middle {
+    display: flex;
+    justify-content: center;  /* center horizontally */
+    align-items: center;      /* center vertically */
+}
+
+.slot-middle img {
+    width: 188px;   /* adjust to your preferred size */
+    height: 188px;  /* or remove height to auto-scale */
+    object-fit: contain;
+}
